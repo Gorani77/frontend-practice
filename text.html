@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .left-column {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-left-green {
+            background-color: #1abc9c;
+            height: 30%;
+        }
+
+        .middle-section {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .light-green {
+            background-color: #8fdc5c;
+            height: 30%;
+        }
+
+        .purple {
+            background-color: #b19cd9;
+            height: 15%;
+        }
+
+        .yellow-green {
+            background-color: #b5d334;
+            height: 35%;
+        }
+
+        .dark-green {
+            background-color: #328c2a;
+            height: 20%;
+        }
+
+        .right-column {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .red {
+            background-color: #ff0000;
+            height: 30%;
+        }
+
+        .orange {
+            background-color: #f5a95f;
+            height: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="top-left-green"></div>
+        </div>
+        <div class="middle-section">
+            <div class="light-green"></div>
+            <div class="purple"></div>
+            <div class="yellow-green"></div>
+            <div class="dark-green"></div>
+        </div>
+        <div class="right-column">
+            <div class="red"></div>
+            <div class="orange"></div>
+        </div>
+    </div>
+</body>
+</html>

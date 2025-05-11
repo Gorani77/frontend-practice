@@ -1,0 +1,90 @@
+body {
+    padding: 50px;
+}
+div {
+    box-sizing: border-box;
+}
+.container {
+    width: 600px;
+    height: 450px;
+    background-color: rgb(115, 191, 194);
+    margin: auto;
+    padding: 50px;
+}
+.w-100 {
+    width: 100%;
+}
+.container table {
+    background: aliceblue;
+    height: 60%;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-collapse: collapse; /* 셀 간 경계를 병합 */
+    table-layout: fixed;
+}
+.title {
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(6, 83, 117);
+}
+.w-100 tr:nth-child(-n+3) td {
+    border-bottom: 2px solid rgb(115, 191, 194);
+}
+.w-100 td {
+    padding: 3px;
+}
+.w-100 td:first-child {
+    width: 100px;
+}
+.w-100 td:nth-child(2) {
+    width: 170px;
+}
+.w-100 img {
+    width: 100px; 
+    height: 100%;
+}
+.tr1 {
+    color: rgb(115, 191, 194);
+    font-size: 12px;
+    font-weight: bold;
+}
+.sony {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.total {
+    color: rgb(6, 83, 117);
+}
+.amount {
+    text-align: right;
+    padding-right: 17px !important;
+}
+.last {
+    text-align: right;
+    padding: 17px !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button {
+    margin-top: 15px;
+    float: right;
+    padding: 20px;
+    font-size: 12px;
+    background-color: rgb(6, 83, 117);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: rosybrown;
+}
+.button:focus {
+    background-color: skyblue;
+}
+.button:active {
+    background-color: seagreen;
+    border: 2px solid rgb(6, 83, 117);
+}
+
