@@ -1,0 +1,208 @@
+div {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.container {
+    width: 60vw;
+    height: 1800px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.header__container {
+    width: 100%;
+    height: 930px;
+    background: linear-gradient(#4990d6 30%, mediumpurple);
+}
+
+.header__main {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header__main-text {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    color: white;
+    top : 20px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.header__main-text button {
+    background-color: rgba(0, 0, 0, 0.62);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.header__main img {
+    width: 250px;
+    height: 250px;
+    margin-right: 0px;
+    position: absolute;
+    top:200px;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.header__second {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.header__second button {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.header__third {
+    width: 100%;
+    height: 100px;
+}
+
+.header__third__title {
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+}
+
+.header__third__content {
+    display: flex;
+    justify-content: center;
+}
+
+.header__third__content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 150px;
+    margin: 20px;
+}
+
+.header__third__content-box i {
+    font-size: 50px;
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.header__third__content-box span {
+    color: white;
+    margin: 5px;
+}
+
+.section__container {
+    width: 100%;
+    text-align: center;
+}
+
+.section__title p {
+    color: black;
+    margin:0px;
+}
+
+.section__main {
+    width: 90%;
+    height: 500px;
+    background-color: #b19cd9;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__main-content {
+    width: 50%;
+    height: 250px;
+    background-color: #1abc9c;
+    position: relative; /* 부모 요소에 position: relative 추가 */
+}
+
+.section__main-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.section__main-overlay {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    top: 0;  /* 위치를 이미지 상단에 맞추기 */
+    left: 0; /* 위치를 이미지 왼쪽에 맞추기 */
+    margin-top: 30px;
+    margin-left: 40px;
+    color: white;
+    text-align: left;
+}
+
+.footer__container {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content:center;
+    padding-top: 50px;
+}
+.footer__container-icon {
+    font-size: 30px;
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: #0c60b1;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 15px;
+    margin: 20px;
+}
+.footer__detail {
+    text-align: center;
+}
+
+@media screen and (max-width : 992px) {
+    .header__main-text {
+        left: 50%;
+    }
+    .header__main-text h1 {
+        font-size: 25px;
+    }
+    .header__main-text span {
+        font-size: 10px;
+    }
+
+    .header__main-text button {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+    .header__main img {
+        width: 200px;
+        height: 200px;
+        top:250px;
+        left: 50%;
+    }
+
+}
